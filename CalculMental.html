@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    //Trouve les nombres
+var nombre1 = Math.floor(Math.random() * 10);
+var nombre2 = Math.floor(Math.random() * 10);
+var calcul = Math.floor(Math.random() * 10);
+
+
+
+// calculer avec les symboles  + * - /
+if (calcul < 2, calcul > 0) {
+    reponseOrdinateur = nombre1 * nombre2;
+    calcul = (" multiplié par ");
+} else if (calcul > 2, calcul < 4) {
+    reponseOrdinateur = nombre1 - nombre2;
+    calcul = " soustrait par ";
+} else if (calcul > 4, calcul < 6) {
+    reponseOrdinateur = nombre1 + nombre2;
+    calcul = " additionné par ";
+} else {
+    reponseOrdinateur = nombre1 / nombre2;
+    calcul = " divisé par ";
+}
+console.log(reponseOrdinateur);
+
+//Interroge l'utilisateur
+var reponseUtilisateur = prompt("Combien font " + nombre1 + calcul + nombre2 + "?");
+// Calcule la reponse
+
+console.log(reponseUtilisateur);
+//compare la reponse
+if (reponseUtilisateur == reponseOrdinateur) {
+
+    alert("youpi");
+} else {
+
+
+    alert("nul");
+}
+    </script>
+  </body>
+</html>
